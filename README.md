@@ -1,9 +1,8 @@
 # Hash Info
 
-
+> Advanced Hash Identifier detect 100+ hash algorithms instantly from the command line.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square&logo=python)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
 ![Version](https://img.shields.io/badge/Version-2.0-cyan?style=flat-square)
 
 ---
