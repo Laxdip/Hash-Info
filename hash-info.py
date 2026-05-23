@@ -611,3 +611,22 @@ ALL_CHECKS = [
     sha1sha1pass, sha1sha1passsalt, sha1sha1passsubstrpass03,
     sha1sha1saltpass, sha1sha1sha1pass, sha1strtolowerusernamepass,
 ]
+
+# ──────────────────────────────────────────────
+#  Helper: validate & clean hash input
+# ──────────────────────────────────────────────
+def sanitize(h):
+    """Strip whitespace; return None if empty."""
+    h = h.strip()
+    return h if h else None
+
+def is_valid_hash_chars(h):
+    """Rough sanity check — reject obviously non-hash strings."""
+    return len(h) >= 4
+
+def get_hash_length_bits(h):
+    """Estimate likely bit-size from hex length."""
+    # Only meaningful for pure hex hashes
+    if re.fullmatch(r'[0-9a-fA-F]+', h):
+        return len(h) * 4
+    return None
