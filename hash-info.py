@@ -642,3 +642,42 @@ def identify(h):
         fn(h)
     jerar.sort()
     return jerar
+
+# ──────────────────────────────────────────────
+#  Output helpers
+# ──────────────────────────────────────────────
+def print_results(h, results):
+    bits = get_hash_length_bits(h)
+    bit_info = f"{C.GRAY}  [{bits} bits]{C.RESET}" if bits else ""
+
+    print(f"\n{C.CYAN}  Hash  :{C.RESET} {C.WHITE}{h}{C.RESET}{bit_info}")
+    print(f"{C.CYAN}  Length:{C.RESET} {len(h)} characters\n")
+
+    if not results:
+        print(f"  {C.RED}✗  No matching algorithm found.{C.RESET}")
+        print(f"  {C.GRAY}  The hash may be custom, truncated, or salted.{C.RESET}\n")
+        return
+
+    names = [algorithms[r] for r in results if r in algorithms]
+
+    if len(names) <= 2:
+        print(f"  {C.GREEN}{C.BOLD}✔  Most Likely:{C.RESET}")
+        for n in names:
+            print(f"     {C.GREEN}[+]{C.RESET} {C.WHITE}{n}{C.RESET}")
+    else:
+        print(f"  {C.GREEN}{C.BOLD}✔  Most Likely:{C.RESET}")
+        for n in names[:2]:
+            print(f"     {C.GREEN}[+]{C.RESET} {C.WHITE}{n}{C.RESET}")
+        print(f"\n  {C.YELLOW}  Also Possible:{C.RESET}")
+        for n in names[2:]:
+            print(f"     {C.YELLOW}[-]{C.RESET} {C.DIM}{n}{C.RESET}")
+    print()
+
+def separator(label=""):
+    width = 62
+    if label:
+        pad = (width - len(label) - 2) // 2
+        print(f"\n{C.GRAY}  {'─'*pad} {C.CYAN}{label}{C.RESET}{C.GRAY} {'─'*pad}{C.RESET}")
+    else:
+        print(f"  {C.GRAY}{'─'*width}{C.RESET}")
+
