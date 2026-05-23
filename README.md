@@ -93,4 +93,4 @@ Requires **Python 3.x** — no external libraries.
 
 ## License
 
-MIT License — free to use, modify, and distribute.
+MIT License
