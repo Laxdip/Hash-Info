@@ -699,3 +699,36 @@ def batch_mode(filepath):
         separator(f"Hash #{i}")
         results = identify(h)
         print_results(h, results)
+
+# ──────────────────────────────────────────────
+#  Interactive / single-hash mode
+# ──────────────────────────────────────────────
+def interactive_mode(first_hash=None):
+    print(logo)
+    first = first_hash
+
+    while True:
+        try:
+            separator()
+            if first:
+                h = first
+                first = None
+            else:
+                h = input(f"  {C.CYAN}HASH:{C.RESET} ").strip()
+
+            if not h:
+                print(f"  {C.YELLOW}  (empty input, try again){C.RESET}")
+                continue
+            if h.lower() in ('exit', 'quit', 'q'):
+                raise KeyboardInterrupt
+
+            if not is_valid_hash_chars(h):
+                print(f"  {C.RED}  Input too short to be a valid hash.{C.RESET}")
+                continue
+
+            results = identify(h)
+            print_results(h, results)
+
+        except KeyboardInterrupt:
+            print(f"\n\n  {C.CYAN}Goodbye!{C.RESET}\n")
+            sys.exit(0)
