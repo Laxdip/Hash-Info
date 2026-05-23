@@ -630,3 +630,15 @@ def get_hash_length_bits(h):
     if re.fullmatch(r'[0-9a-fA-F]+', h):
         return len(h) * 4
     return None
+
+# ──────────────────────────────────────────────
+#  Core identification
+# ──────────────────────────────────────────────
+def identify(h):
+    """Run all detectors and return sorted list of matching algo codes."""
+    global jerar
+    jerar = []
+    for fn in ALL_CHECKS:
+        fn(h)
+    jerar.sort()
+    return jerar
