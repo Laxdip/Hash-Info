@@ -732,3 +732,37 @@ def interactive_mode(first_hash=None):
         except KeyboardInterrupt:
             print(f"\n\n  {C.CYAN}Goodbye!{C.RESET}\n")
             sys.exit(0)
+
+# ──────────────────────────────────────────────
+#  Entry point
+# ──────────────────────────────────────────────
+def main():
+    parser = argparse.ArgumentParser(
+        prog="hash-info",
+        description=f"Hash Info v{version} — Advanced Hash Identifier by Prasad",
+        formatter_class=argparse.RawTextHelpFormatter,
+        epilog="Examples:\n"
+               "  python hash-info.py\n"
+               "  python hash-info.py 5f4dcc3b5aa765d61d8327deb882cf99\n"
+               "  python hash-info.py --file hashes.txt\n"
+               "  python hash-info.py --no-color 5f4dcc3b5aa765d61d8327deb882cf99",
+    )
+    parser.add_argument("hash", nargs="?", help="Hash string to identify")
+    parser.add_argument("-f", "--file", metavar="FILE",
+                        help="File containing one hash per line")
+    parser.add_argument("--no-color", action="store_true",
+                        help="Disable colored output")
+    parser.add_argument("-v", "--version", action="version",
+                        version=f"Hash Info v{version} by Prasad")
+
+    args = parser.parse_args()
+
+    if args.no_color:
+        for attr in vars(C):
+            if not attr.startswith("_"):
+                setattr(C, attr, "")
+
+    if args.file:
+        batch_mode(args.file)
+    else:
+        interactive_mode(first_hash=args.hash)
