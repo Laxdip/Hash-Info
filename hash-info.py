@@ -28,3 +28,10 @@ class C:
     CYAN    = "\033[96m"
     WHITE   = "\033[97m"
     GRAY    = "\033[90m"
+
+# Disable colors if output is piped / redirected
+if not sys.stdout.isatty():
+    for attr in vars(C):
+        if not attr.startswith("_"):
+            setattr(C, attr, "")
+
