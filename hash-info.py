@@ -681,3 +681,21 @@ def separator(label=""):
     else:
         print(f"  {C.GRAY}{'─'*width}{C.RESET}")
 
+# ──────────────────────────────────────────────
+#  Batch mode: read hashes from file
+# ──────────────────────────────────────────────
+def batch_mode(filepath):
+    try:
+        with open(filepath, 'r', encoding='utf-8', errors='ignore') as f:
+            lines = [l.strip() for l in f if l.strip() and not l.startswith('#')]
+    except FileNotFoundError:
+        print(f"\n  {C.RED}Error: File '{filepath}' not found.{C.RESET}\n")
+        sys.exit(1)
+
+    print(logo)
+    print(f"  {C.CYAN}Batch mode:{C.RESET} processing {C.WHITE}{len(lines)}{C.RESET} hashes from {C.WHITE}{filepath}{C.RESET}\n")
+
+    for i, h in enumerate(lines, 1):
+        separator(f"Hash #{i}")
+        results = identify(h)
+        print_results(h, results)
