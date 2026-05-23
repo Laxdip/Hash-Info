@@ -766,3 +766,7 @@ def main():
         batch_mode(args.file)
     else:
         interactive_mode(first_hash=args.hash)
+
+
+if __name__ == "__main__":
+    main()
