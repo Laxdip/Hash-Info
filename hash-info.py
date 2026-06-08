@@ -2,7 +2,7 @@
 # encoding: utf-8
 # ============================================================
 #   Hash Info - Advanced Hash Identifier
-#   By Prasad  |  v2.0
+#   By Prasad  |  V2.0
 # ============================================================
 
 import sys
