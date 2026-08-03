@@ -94,7 +94,7 @@ cd hash-info
 python hash-info.py
 ```
 
-Requires **Python 3.x** — no external libraries.
+Requires **Python 3.x** no external libraries.
 
 ---
 
