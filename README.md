@@ -16,7 +16,7 @@
 ## Preview
 
 <div align="center">
-<img src="assets/Hash_interface.png" alt="Interactive mode" width="700"/>
+<img src="assets/Hash interface.png" alt="Interactive mode" width="700"/>
 
 <sub>Interactive mode — paste a hash and get instant identification</sub>
 </div>
@@ -24,7 +24,7 @@
 <br/>
 
 <div align="center">
-<img src="assets/Hash_output.png" alt="Example output" width="700"/>
+<img src="assets/Hash output.png" alt="Example output" width="700"/>
 
 <sub>Color-coded results with bit-length and ranked likelihood</sub>
 </div>
@@ -32,7 +32,7 @@
 <br/>
 
 <div align="center">
-<img src="assets/Hash_help_menu.png" alt="Help menu" width="700"/>
+<img src="assets/Hash help menu.png" alt="Help menu" width="700"/>
 
 <sub>Built-in help menu</sub>
 </div>
