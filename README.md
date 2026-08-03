@@ -1,41 +1,18 @@
-<div align="center">
-
 # Hash Info
-
-**Advanced Hash Identifier — detect 100+ hash algorithms instantly from the command line.**
-
-![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-![Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen)
-![Platform](https://img.shields.io/badge/Platform-CLI-informational)
-
-</div>
+> Advanced Hash Identifier — detect 100+ hash algorithms instantly from the command line.
 
 ---
 
 ## Preview
 
-<div align="center">
-<img src="assets/Hash interface.png" alt="Interactive mode" width="700"/>
+**Interactive mode**
+![Interactive mode](screenshots/Hash interface.png)
 
-<sub>Interactive mode — paste a hash and get instant identification</sub>
-</div>
+**Example output**
+![Example output](screenshots/Hash output.png)
 
-<br/>
-
-<div align="center">
-<img src="assets/Hash output.png" alt="Example output" width="700"/>
-
-<sub>Color-coded results with bit-length and ranked likelihood</sub>
-</div>
-
-<br/>
-
-<div align="center">
-<img src="assets/Hash help menu.png" alt="Help menu" width="700"/>
-
-<sub>Built-in help menu</sub>
-</div>
+**Help menu**
+![Help menu](screenshots/Hash help menu.png)
 
 ---
 
