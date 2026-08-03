@@ -27,7 +27,7 @@
 - Single hash via CLI argument or interactive prompt
 - Shows hash **bit-length** automatically
 - `--no-color` flag for clean piped/logged output
-- Lightweight — zero dependencies, pure Python 3
+- Lightweight — zero dependencies, pure Python 
 
 ---
 
