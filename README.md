@@ -6,13 +6,13 @@
 ## Preview
 
 **Interactive mode**
-![Interactive mode](screenshots/Hash_interface.png)
+<img src="screenshots/Hash_interface.png" width="450"/>
 
 **Example output**
-![Example output](screenshots/Hash_output.png)
+<img src="screenshots/Hash_output.png" width="450"/>
 
 **Help menu**
-![Help menu](screenshots/Hash_help_menu.png)
+<img src="screenshots/Hash_help_menu.png" width="450"/>
 
 ---
 
