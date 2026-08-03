@@ -1,6 +1,41 @@
+<div align="center">
+
 # Hash Info
 
-> Advanced Hash Identifier detect 100+ hash algorithms instantly from the command line.
+**Advanced Hash Identifier — detect 100+ hash algorithms instantly from the command line.**
+
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Dependencies](https://img.shields.io/badge/Dependencies-Zero-brightgreen)
+![Platform](https://img.shields.io/badge/Platform-CLI-informational)
+
+</div>
+
+---
+
+## Preview
+
+<div align="center">
+<img src="assets/Hash_interface.png" alt="Interactive mode" width="700"/>
+
+<sub>Interactive mode — paste a hash and get instant identification</sub>
+</div>
+
+<br/>
+
+<div align="center">
+<img src="assets/Hash_output.png" alt="Example output" width="700"/>
+
+<sub>Color-coded results with bit-length and ranked likelihood</sub>
+</div>
+
+<br/>
+
+<div align="center">
+<img src="assets/Hash_help_menu.png" alt="Help menu" width="700"/>
+
+<sub>Built-in help menu</sub>
+</div>
 
 ---
 
@@ -42,11 +77,9 @@ python hash-info.py --help
 ```
   Hash  : 5f4dcc3b5aa765d61d8327deb882cf99  [128 bits]
   Length: 32 characters
-
   ✔  Most Likely:
      [+] MD5
      [+] Domain Cached Credentials (MD4)
-
      Also Possible:
      [-] NTLM
      [-] MD4
@@ -58,16 +91,16 @@ python hash-info.py --help
 
 ## Supported Algorithms
 
-| Category     | Algorithms                                              |
-|--------------|---------------------------------------------------------|
-| MD family    | MD2, MD4, MD5, MD5-HMAC, MD5 variants                  |
-| SHA family   | SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 + HMAC        |
-| RipeMD       | RipeMD-128, 160, 256, 320 + HMAC                        |
-| Tiger        | Tiger-128, 160, 192 + HMAC                              |
-| Haval        | Haval-128, 160, 192, 224, 256 + HMAC                    |
-| CRC / Checksum | CRC-16, CRC-32, ADLER-32, FCS-16, XOR-32              |
-| Other        | NTLM, Whirlpool, GOST, SNEFRU, DES, SAM, MySQL, bcrypt |
-| CMS / Framework | Joomla, Wordpress, phpBB3, Django, MaNGOS            |
+| Category        | Algorithms                                              |
+|------------------|----------------------------------------------------------|
+| MD family        | MD2, MD4, MD5, MD5-HMAC, MD5 variants                    |
+| SHA family        | SHA-1, SHA-224, SHA-256, SHA-384, SHA-512 + HMAC          |
+| RipeMD           | RipeMD-128, 160, 256, 320 + HMAC                          |
+| Tiger            | Tiger-128, 160, 192 + HMAC                                |
+| Haval            | Haval-128, 160, 192, 224, 256 + HMAC                      |
+| CRC / Checksum   | CRC-16, CRC-32, ADLER-32, FCS-16, XOR-32                  |
+| Other            | NTLM, Whirlpool, GOST, SNEFRU, DES, SAM, MySQL, bcrypt    |
+| CMS / Framework  | Joomla, WordPress, phpBB3, Django, MaNGOS                 |
 
 ---
 
