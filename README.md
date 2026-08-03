@@ -3,7 +3,7 @@
 
 ---
 
-## Preview 
+## Preview
 
 **Interactive mode**
 
