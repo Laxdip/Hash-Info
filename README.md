@@ -6,16 +6,16 @@
 ## Preview
 
 **Interactive mode**
-<img src="screenshots/Hash_interface.png" width="450" align="left"/>
-<br clear="left"/>
+
+<img src="screenshots/Hash_interface.png" width="450"/>
 
 **Example output**
-<img src="screenshots/Hash_output.png" width="450" align="left"/>
-<br clear="left"/>
+
+<img src="screenshots/Hash_output.png" width="450"/>
 
 **Help menu**
-<img src="screenshots/Hash_help_menu.png" width="450" align="left"/>
-<br clear="left"/>
+
+<img src="screenshots/Hash_help_menu.png" width="450"/>
 
 ---
 
