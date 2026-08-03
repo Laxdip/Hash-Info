@@ -1,5 +1,5 @@
 # Hash Info
-> Advanced Hash Identifier — detect 100+ hash algorithms instantly from the command line.
+> Advanced Hash Identifier detect 100+ hash algorithms instantly from the command line.
 
 ---
 
